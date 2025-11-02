@@ -9,8 +9,8 @@ const contenedoresData = {
     { nombre: "Canasta abatible 2.3 kg", tara: 2.3 },
     { nombre: "Canasta grande 2.0 kg", tara: 2.0 },
     { nombre: "Canasta mediana 1.8 kg", tara: 1.8 },
-    { nombre: "Canasta fruver pequeña 1.3 kg", tara: 1.3 },
-    { nombre: "Bandeja fruver 0.8 kg", tara: 0.8 }
+    { nombre: "Canasta pequeña 1.3 kg", tara: 1.3 },
+    { nombre: "Bandeja 0.8 kg", tara: 0.8 }
   ]
 };
 
@@ -176,4 +176,5 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("seccion-select").classList.remove("hidden");
     });
   }
+
 });

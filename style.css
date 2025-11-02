@@ -9,6 +9,24 @@ body {
   min-height: 100vh;
 }
 
+/* --- LOGO --- */
+header {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 6px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+}
+
+
 h1 {
   color: #ffffff;
   margin: 20px 0;

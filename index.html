@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario Frescos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>INVENTARIO FRESCOS</h1>
+  </header>
+
+  <main id="app">
+    <!-- Pantalla 1: Selección de sección -->
+    <section id="seccion-select">
+      <h2>Selecciona la sección:</h2>
+      <button class="btn azul" onclick="seleccionarSeccion('Carnes')">🥩 Carnes</button>
+      <button class="btn verde" onclick="seleccionarSeccion('Fruver')">🥬 Fruver</button>
+    </section>
+
+    <!-- Pantalla 2: Selección de contenedor -->
+    <section id="contenedor-select" class="hidden">
+    <h2 id="titulo-seccion">Selecciona el tipo de canasta</h2>
+    <div div id="contenedores"></div>
+    <button class="btn gris" id="volverSeccion">⬅ Volver</button>
+    </section>
+
+    <!-- Pantalla 3: Cálculo -->
+    <section id="calculo" class="hidden">
+      <h2 id="tipo-contenedor"></h2>
+      <label>Cantidad de canastas utilizadas:</label>
+      <input type="number" id="cantidad" min="1" placeholder="Ej: 4">
+
+      <label>Peso bruto (tal como lo muestra la balanza):</label>
+      <input type="number" id="pesoBruto" step="0.01" placeholder="Ej: 32.80">
+
+      <button class="btn azul" onclick="calcularPeso()">Calcular peso neto</button>
+      <button class="btn gris" onclick="volverContenedores()">⬅ Volver</button>
+    </section>
+
+    <!-- Pantalla 4: Resultado -->
+    <section id="resultado" class="hidden">
+      <h2>Resultado del Pesaje ✅</h2>
+      <p id="detalleTara"></p>
+      <p id="pesoNeto" class="peso-final"></p>
+      <p class="nota">👉 Escribe este valor en la planilla</p>
+      <button class="btn azul" onclick="nuevoPesaje()">Nuevo pesaje</button>
+    </section>
+  </main>
+
+  <footer>
+    <small>Megatiendas © 2025</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

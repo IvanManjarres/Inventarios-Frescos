@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #004aad; /* Azul Megatiendas */
+  color: white;
+  padding: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+h2 {
+  color: #004aad;
+}
+
+main {
+  padding: 20px;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn.azul { background-color: #ff0037; }
+.btn.rojo { background-color: #e00025; }
+.btn.verde { background-color: #198754; }
+.btn.gris { background-color: #6c757d; }
+
+.btn:hover { opacity: 0.9; }
+
+input {
+  display: block;
+  width: 80%;
+  margin: 10px auto 20px;
+  padding: 10px;
+  font-size: 1.1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.peso-final {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #e00025; /* Rojo Megatiendas */
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  font-size: 0.9em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.nota {
+  font-style: italic;
+  color: #444;
+}
+
+
+/* --- Bloques de canastas múltiples --- */
+.bloque-canasta {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px auto;
+  width: 90%;
+  text-align: left;
+}
+
+.bloque-canasta label {
+  display: block;
+  font-weight: bold;
+  color: #004aad;
+  margin-bottom: 5px;
+}
+
+.bloque-canasta select,
+.bloque-canasta input {
+  width: 95%;
+  padding: 8px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.btn.eliminar {
+  width: auto;
+  font-size: 0.9em;
+  padding: 8px 12px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+#listaCanastas {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
